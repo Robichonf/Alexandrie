@@ -96,8 +96,7 @@ services:
 
   # Alexandrie Frontend
   frontend:
-    build:
-      image: alexandrie-frontend-custom:latest
+    image: alexandrie-frontend-custom:latest
     restart: unless-stopped
     environment:
       PORT: 8200
