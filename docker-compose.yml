@@ -97,8 +97,7 @@ services:
   # Alexandrie Frontend
   frontend:
     build:
-      context: ./frontend
-      dockerfile: Dockerfile
+      image: alexandrie-frontend-custom:latest
     restart: unless-stopped
     environment:
       PORT: 8200
