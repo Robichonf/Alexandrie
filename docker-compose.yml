@@ -92,10 +92,8 @@ services:
     extra_hosts:
       - 'localhost:host-gateway'
     depends_on:
-      mysql:
-        condition: service_healthy
-      rustfs:
-        condition: service_healthy
+      - mysql
+      - rustfs
     networks:
       - alexandrie-network
 
