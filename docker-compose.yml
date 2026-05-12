@@ -96,7 +96,9 @@ services:
 
   # Alexandrie Frontend
   frontend:
-    image: ghcr.io/smaug6739/alexandrie-frontend:latest
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
     restart: unless-stopped
     environment:
       PORT: 8200
